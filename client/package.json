@@ -1,0 +1,36 @@
+{
+  "name": "hitryremote-client",
+  "version": "1.0.0",
+  "description": "HiTryRemote 客户端应用",
+  "main": "frontend/src/main.js",
+  "scripts": {
+    "dev": "wails dev",
+    "build": "wails build",
+    "build:prod": "wails build -clean -platform all",
+    "build:win": "wails build -platform windows/amd64",
+    "build:mac": "wails build -platform darwin/amd64",
+    "build:linux": "wails build -platform linux/amd64",
+    "serve": "wails serve",
+    "clean": "wails clean"
+  },
+  "keywords": [
+    "hitryremote",
+    "client",
+    "wails",
+    "quic",
+    "proxy"
+  ],
+  "author": "HiTryRemote Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@wailsapp/cli": "^2.8.0"
+  },
+  "dependencies": {
+    "vue": "^3.3.0",
+    "vue-router": "^4.2.0",
+    "pinia": "^2.1.0",
+    "element-plus": "^2.3.0",
+    "@element-plus/icons-vue": "^2.1.0",
+    "axios": "^1.4.0"
+  }
+}

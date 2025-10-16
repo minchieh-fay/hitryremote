@@ -1,0 +1,38 @@
+{
+  "$schema": "https://wails.io/schemas/config.v2.json",
+  "name": "hitryremote-client",
+  "outputfilename": "hitryremote-client",
+  "frontend:install": "npm install",
+  "frontend:build": "npm run build",
+  "frontend:dev:watcher": "npm run dev",
+  "frontend:dev:serverUrl": "auto",
+  "author": {
+    "name": "HiTryRemote Team",
+    "email": "team@hitryremote.com"
+  },
+  "info": {
+    "productName": "HiTryRemote Client",
+    "productVersion": "1.0.0",
+    "copyright": "Copyright © 2024 HiTryRemote Team",
+    "comments": "HiTryRemote 客户端应用"
+  },
+  "nsisType": "multiple",
+  "obfuscated": false,
+  "wailsjsdir": "./frontend/src/wails",
+  "frontenddir": "./frontend",
+  "builddir": "./build",
+  "appargs": "",
+  "devServer": "http://localhost:34115",
+  "debounceMS": 100,
+  "devServerURL": "http://localhost:34115",
+  "platforms": [
+    "windows/amd64",
+    "darwin/amd64",
+    "darwin/arm64",
+    "linux/amd64"
+  ],
+  "compiler": "go",
+  "ldflags": "-s -w",
+  "tags": "",
+  "runNonNativeBuildHooks": false
+}
